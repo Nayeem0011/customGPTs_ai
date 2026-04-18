@@ -1,5 +1,19 @@
 import React from 'react'
 
+import Image from "next/image";
+import card_logo1 from "../../public/card_logo1.png";
+import card_logo2 from "../../public/card_logo2.png";
+import card_logo3 from "../../public/card_logo3.png";
+import card_logo4 from "../../public/card_logo4.png";
+import card_logo5 from "../../public/card_logo5.png";
+import card_logo6 from "../../public/card_logo6.png";
+import card_logo7 from "../../public/card_logo7.png";
+import card_logo8 from "../../public/card_logo8.png";
+import card_logo9 from "../../public/card_logo9.png";
+import card_logo10 from "../../public/card_logo10.png";
+import card_logo11 from "../../public/card_logo11.png";
+import card_logo12 from "../../public/card_logo12.png";
+
 const HeroPage = () => {
   return (
     <section>
@@ -55,7 +69,7 @@ const HeroPage = () => {
       </div>
 
       {/* Bottom decorative card */}
-      <div className="w-fit mx-auto p-2 rounded-2xl bg-white/20 mt-10">
+      <div className="relative w-fit mx-auto p-2 rounded-2xl bg-white/20 mt-10">
         {/* Inner box */}
         <div className="w-241.5 h-135.75 rounded-xl bg-white flex justify-between ">
 
@@ -72,10 +86,73 @@ const HeroPage = () => {
             </svg>
           </div>
 
+          {/* Floating logos container (all logos are absolutely positioned) */}
+          <div className=''>
+            {/* Small logo 1 */}
+            <div className='absolute top-26.5 left-60.5'>
+              <Image className='w-7.5 h-7.5 rounded-full' src={card_logo1} alt="loading ..." />
+            </div>
+
+            {/* Small logo 2 */}
+            <div className='absolute top-39 left-88.5'>
+              <Image className='w-7.5 h-7.5 rounded-full' src={card_logo2} alt="loading ..." />
+            </div>
+
+            {/* Medium logo (with gray background circle) */}
+            <div className='absolute top-18.75 left-113.25 rounded-full flex items-center justify-center w-15.25 h-15.25 bg-[#EEEEEE]'>
+              <Image className='w-13.25 h-13.25 rounded-full' src={card_logo3} alt="loading ..." />
+            </div>
+
+            {/* Small logo 4 */}
+            <div className='absolute top-39 left-143.5'>
+              <Image className='w-7.5 h-7.5  rounded-full' src={card_logo4} alt="loading ..." />
+            </div>
+
+            {/* Small logo 5 */}
+            <div className='absolute top-26.5 left-173.75'>
+              <Image className='w-7.5 h-7.5  rounded-full' src={card_logo5} alt="loading ..." />
+            </div>
+
+            {/* Medium logo (bottom right) */}
+            <div className='absolute w-15.25 h-15.25 top-60.25 left-154.75 flex items-center justify-center rounded-[200px] bg-[#EEEEEE]'>
+              <Image className='w-13.25 h-13.25 rounded-full' src={card_logo6} alt="loading ..." />
+            </div>
+
+            {/* Small logo 7 */}
+            <div className='absolute top-89.25 left-143.5'>
+              <Image className='w-7.5 h-7.5 rounded-full' src={card_logo7} alt="loading ..." />
+            </div>
+
+            {/* Small logo 8 */}
+            <div className='absolute top-102 left-173.75'>
+              <Image className='w-7.5 h-7.5 rounded-full' src={card_logo8} alt="loading ..." />
+            </div>
+
+            {/* Medium logo (bottom center) */}
+            <div className='absolute w-15.25 h-15.25 top-113.25 left-113.25 flex items-center justify-center rounded-[200px] bg-[#EEEEEE]'>
+              <Image className='w-13.25 h-13.25 rounded-full' src={card_logo9} alt="loading ..." />
+            </div>
+
+            {/* Small logo 10 */}
+            <div className='absolute top-102 left-60.5'>
+              <Image className='w-7.5 h-7.5 rounded-full' src={card_logo10} alt="loading ..." />
+            </div>
+
+            {/* Medium logo (bottom left) */}
+            <div className='absolute top-89.25 left-88.5'>
+              <Image className='w-7.5 h-7.5 rounded-full' src={card_logo11} alt="loading ..." />
+            </div>
+
+            {/* Center video (perfectly centered using absolute) */}
+            <div className='absolute w-15.25 h-15.25 top-60.25 left-71.75 flex items-center justify-center rounded-[200px] bg-[#EEEEEE]'>
+              <Image className='w-13.25 h-13.25 rounded-full' src={card_logo12} alt="loading ..." />
+            </div>
+          </div>
+
           {/* Center content (video circle) */}
-          <div className='flex items-center justify-center'>
+          <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>
             {/* Circular container with gradient + shadow */}
-            <div className="w-42.75 h-42.75 rounded-[140px] bg-[radial-gradient(50%_50%_at_50%_50%,#BADAFF_0%,#FFFFFF_100%)] border-10 border-[#FFFFFF] shadow-[0px_4px_9px_0px_#2349EA29,0px_16px_16px_0px_#2349EA24,0px_36px_22px_0px_#2349EA14,0px_64px_26px_0px_#2349EA05,0px_100px_28px_0px_#2349EA00] overflow-hidden flex items-center justify-center">
+            <div className="w-42.75 h-42.75 rounded-[140px] bg-[radial-gradient(50%_50%_at_50%_50%,#BADAFF_0%,#FFFFFF_100%)] border-10 border-[#FFFFFF] shadow-[0px_4px_9px_0px_#2349EA29,0px_16px_16px_0px_#2349EA24,0px_36px_22px_0px_#2349EA14,0px_64px_26px_0px_#2349EA05,0px_100px_28px_0px_#2349EA00] overflow-hidden flex items-center justify-center pointer-events-auto">
               {/* Video element inside circle */}
               <video
                 className="w-full h-full object-cover"
