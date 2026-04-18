@@ -2,10 +2,11 @@ import React from 'react'
 import NavBar from './NavBar'
 import HeroPage from './HeroPage'
 
+
 const Header = () => {
   return (
     <div>
-      <NavBar />
+      <NavBar /> 
       <HeroPage />
     </div>
   )

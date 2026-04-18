@@ -2,9 +2,7 @@ import React from 'react'
 
 const HeroPage = () => {
   return (
-    <div>
-      
-    </div>
+    <div className='flex justify-center font-bold'>HeroPage</div>
   )
 }
 
