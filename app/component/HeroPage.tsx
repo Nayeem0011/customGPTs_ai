@@ -72,11 +72,21 @@ const HeroPage = () => {
             </svg>
           </div>
 
+          {/* Center content (video circle) */}
           <div className='flex items-center justify-center'>
-            <div className='w-42.75 h-42.75 rounded-[140px] bg-[radial-gradient(50%_50%_at_50%_50%,#BADAFF_0%,#FFFFFF_100%)] border-10 border-[#FFFFFF] shadow-[0px_4px_9px_0px_#2349EA29,0px_16px_16px_0px_#2349EA24,0px_36px_22px_0px_#2349EA14,0px_64px_26px_0px_#2349EA05,0px_100px_28px_0px_#2349EA00]'>
-
+            {/* Circular container with gradient + shadow */}
+            <div className="w-42.75 h-42.75 rounded-[140px] bg-[radial-gradient(50%_50%_at_50%_50%,#BADAFF_0%,#FFFFFF_100%)] border-10 border-[#FFFFFF] shadow-[0px_4px_9px_0px_#2349EA29,0px_16px_16px_0px_#2349EA24,0px_36px_22px_0px_#2349EA14,0px_64px_26px_0px_#2349EA05,0px_100px_28px_0px_#2349EA00] overflow-hidden flex items-center justify-center">
+              {/* Video element inside circle */}
+              <video
+                className="w-full h-full object-cover"
+                autoPlay   // auto play video
+                muted      // no sound
+                loop       // repeat continuously
+                playsInline // mobile friendly playback
+              >
+                <source src="/video.mp4" type="video/mp4" />
+              </video>
             </div>
-            <div></div>
           </div>
 
           {/* Right SVG shape (mirror of left) */}
