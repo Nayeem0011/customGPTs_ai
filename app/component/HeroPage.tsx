@@ -53,8 +53,44 @@ const HeroPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-fit mx-auto p-2 rounded-2xl bg-white/20">
-        <div className="w-241.5 h-135.75 rounded-xl bg-white">
+
+      {/* Bottom decorative card */}
+      <div className="w-fit mx-auto p-2 rounded-2xl bg-white/20 mt-10">
+        {/* Inner box */}
+        <div className="w-241.5 h-135.75 rounded-xl bg-white flex justify-between ">
+
+          {/* Left SVG shape */}
+          <div className='flex items-end justify-center'>
+            <svg width="223" height="477" viewBox="0 0 223 477" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0C99.8755 0 183.465 75.7576 193.258 175.152L223 477H0V0Z" fill="url(#paint0_linear_1_155)" />
+              <defs>
+                <linearGradient id="paint0_linear_1_155" x1="111.5" y1="0" x2="111.5" y2="477" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#E1F1FF" />
+                  <stop offset="1" stop-color="white" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div className='flex items-center justify-center'>
+            <div className='w-42.75 h-42.75 rounded-[140px] bg-[radial-gradient(50%_50%_at_50%_50%,#BADAFF_0%,#FFFFFF_100%)] border-10 border-[#FFFFFF] shadow-[0px_4px_9px_0px_#2349EA29,0px_16px_16px_0px_#2349EA24,0px_36px_22px_0px_#2349EA14,0px_64px_26px_0px_#2349EA05,0px_100px_28px_0px_#2349EA00]'>
+
+            </div>
+            <div></div>
+          </div>
+
+          {/* Right SVG shape (mirror of left) */}
+          <div className='flex items-end justify-center'>
+            <svg width="223" height="477" viewBox="0 0 223 477" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M223 0C123.124 0 39.5354 75.7576 29.7419 175.152L0 477H223V0Z" fill="url(#paint0_linear_1_154)" />
+              <defs>
+                <linearGradient id="paint0_linear_1_154" x1="111.5" y1="0" x2="111.5" y2="477" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#E1F1FF" />
+                  <stop offset="1" stop-color="white" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
 
         </div>
       </div>
