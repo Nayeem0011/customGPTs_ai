@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 const footerLinks = [
@@ -11,63 +10,80 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#eef0f7] px-16 py-12 flex flex-col">
+    <footer className="bg-[#eef0f7] px-16 py-12 flex flex-col"
+    >
 
       {/* Top Section */}
       <div className="flex justify-center">
         <div className="flex gap-16">
 
           {/* Left Side */}
-          <div className="flex flex-col gap-6 min-w-[200px]">
+          <div className="flex flex-col justify-between min-w-[200px]">
 
+            {/* Top part — শুধু logo */}
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold">G</div>
-              <span className="font-semibold text-[15px] text-gray-800">CustomGPT.ai</span>
+              <img src="/Logo_2.png" alt="" />
             </div>
 
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full border border-gray-300 bg-white flex items-center justify-center text-[8px] font-bold text-center text-gray-600 leading-tight p-1">AICPA SOC</div>
-              <div className="w-10 h-10 rounded-full border border-gray-300 bg-white flex items-center justify-center text-[8px] font-bold text-center text-gray-600 leading-tight p-1">SOC2</div>
-              <div className="w-10 h-10 rounded-full border border-gray-300 bg-white flex items-center justify-center text-[8px] font-bold text-center text-blue-600 leading-tight p-1">GDPR</div>
-              <div className="w-10 h-10 rounded-full border border-gray-300 bg-white flex items-center justify-center text-[8px] font-bold text-center text-gray-600 leading-tight p-1">ISO</div>
+            {/* Bottom part — text + badges + social */}
+            <div className="flex flex-col gap-4 pt-6">
+
+
+
+              {/* Badges */}
+              <div className="flex items-center gap-4 ">
+                {[
+                  { label: "", src: "/Logo2.png" },
+                  { label: "", src: "/Logo.png" },
+                  { label: "", src: "/Logo_3.png" },
+                  { label: "", src: "/Logo_4.png" },
+                ].map(({ label, src }) => (
+                  <div key={label} className="flex flex-col items-center gap-1">
+                    <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden">
+                      <img src={src} alt={label} className="w-full h-full object-contain" />
+                    </div>
+                    <span className="text-[10px] text-gray-500">{label}</span>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-[12px] text-blue-500">GDPR & SOC2 Compliant</p>
+
+              {/* Social Icons */}
+              <div className="flex items-center gap-6 mt-6">
+                <img src="/Tweiter.png" alt="" />
+                <img src="/Insta.png" alt="" />
+                <img src="/Fi.png" alt="" />
+                <img src="/Github.png" alt="" />
+              </div>
             </div>
-
-            <p className="text-[12px] text-blue-500 -mt-4">GDPR & SOC2 Compliant</p>
-
-            <div className="flex items-center gap-4">
-              {/* Icons same as before */}
-              <a href="#" className="text-gray-600 hover:text-gray-900">X</a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">IG</a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">DC</a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">GH</a>
-            </div>
-
           </div>
-
           {/* Links Section */}
-          <div className="flex gap-12 flex-1">
+          <div className="flex gap-16 flex-1">
             {footerLinks.map((col, index) => (
               <div key={index} className="flex flex-col gap-3">
-                <p className="text-[14px] font-semibold text-gray-800 mb-1">{col.title}</p>
+                <p className="font-['Geist'] font-medium text-[16px] leading-none tracking-normal text-[#4A4A59]">
+                  {col.title}
+                </p>
                 {col.links.map((link, i) => (
-                  <a key={i} href="#" className="text-[13px] text-gray-500 hover:text-gray-800 whitespace-nowrap">
+                  <a key={i}
+                    href="#"
+                    className="font-['Geist'] font-normal text-[16px] leading-[150%] tracking-[-0.4px] text-[#8B929E] hover:text-[#4A4A59] whitespace-nowrap"
+                  >
                     {link}
                   </a>
                 ))}
               </div>
             ))}
           </div>
-
         </div>
       </div>
-
       {/* Bottom Section */}
       <div className="mt-12 pt-6 border-t border-gray-300 text-center">
         <p className="text-[13px] text-gray-500">
           © Copyright 2025 – CustomGPT.ai – All Rights Reserved
         </p>
       </div>
-
     </footer>
   )
 }
