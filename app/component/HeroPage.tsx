@@ -13,8 +13,8 @@ import card_logo9 from "../../public/card_logo9.png";
 import card_logo10 from "../../public/card_logo10.png";
 import card_logo11 from "../../public/card_logo11.png";
 import card_logo12 from "../../public/card_logo12.png";
-import icon from "../../public/icon.png";
-import icon2 from "../../public/icon_2.png";
+import icon from "../../public/Icon.png";
+import icon2 from "../../public/Icon_2.png";
 
 const HeroPage = () => {
   return (
