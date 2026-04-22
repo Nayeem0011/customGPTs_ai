@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { testimonialData } from "../data/testimonialData";
 import Image from "next/image";
+import TvIcon from "./svg/TvIcon";
 
 const Testimonial = () => {
 
@@ -61,10 +62,10 @@ const Testimonial = () => {
                 >
 
                   {isActive ? (
-                    <div className="h-full bg-linear-to-br from-blue-500 to-indigo-500 text-white p-6 flex flex-col justify-between">
-                      <p className="text-sm">{item.text}</p>
-
-                      <div className="flex items-center gap-3 mt-6">
+                    <div className="h-full bg-[radial-gradient(120.74%_124.92%_at_7.26%_100%,#326DE4_0%,#628FFD_100%)] text-white p-8 flex flex-col">
+                      <TvIcon />
+                      <p className="font-medium text-[18px] leading-[160%] tracking-[0em] align-middle mt-8">{item.text}</p>
+                      <div className="flex items-center gap-4 mt-30">
                         <Image
                           src={item.img}
                           alt={item.name}
@@ -73,9 +74,9 @@ const Testimonial = () => {
                           className=" w-12.5 h-13.25 rounded-xl object-cover "
                         />
 
-                        <div>
-                          <h4>{item.name}</h4>
-                          <p className="text-xs opacity-80">{item.role}</p>
+                        <div className="">
+                          <h4 className="font-semibold text-[16px] leading-[160%] tracking-[0em] align-middle text-[#FFFFFF]">{item.name}</h4>
+                          <p className="font-normal text-[14px] leading-[160%] tracking-[0em] align-middle">{item.role}</p>
                         </div>
                       </div>
                     </div>
@@ -119,3 +120,4 @@ const Testimonial = () => {
 }
 
 export default Testimonial;
+
