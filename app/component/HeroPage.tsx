@@ -13,6 +13,8 @@ import card_logo9 from "../../public/card_logo9.png";
 import card_logo10 from "../../public/card_logo10.png";
 import card_logo11 from "../../public/card_logo11.png";
 import card_logo12 from "../../public/card_logo12.png";
+import icon from "../../public/icon.png";
+import icon2 from "../../public/icon_2.png";
 
 const HeroPage = () => {
   return (
@@ -39,11 +41,11 @@ const HeroPage = () => {
 
           <div className="flex items-center gap-4 mb-10 flex-wrap justify-center">
             <div className="flex items-center gap-3 rounded-[10px] border border-white/20 px-4 py-3 text-white text-sm">
-              <img src="/icon.png" alt="check" className="w-4 h-4" />
+              <Image src={icon} alt="check" className="w-4 h-4" />
               Industry-leading accuracy
             </div>
             <div className="flex items-center gap-3 rounded-[10px] border border-white/20 px-4 py-3 text-white text-sm">
-              <img src="/icon_2.png" alt="shield" className="w-4 h-4" />
+              <Image src={icon2} alt="shield" className="w-4 h-4" />
               Zero data sharing & training
             </div>
           </div>
