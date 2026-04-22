@@ -1,4 +1,6 @@
 
+
+
 // 'use client'
 // import { useState } from 'react'
 
@@ -82,62 +84,62 @@
 //         </p>
 
 //         {/* App Window */}
-//         <div className="w-full max-w-[440px] rounded-xl sm:rounded-2xl overflow-hidden bg-white/90 backdrop-blur-md">
+//         <div className="w-full max-w-[440px] rounded-xl sm:rounded-2xl  ">
 
-        
-
-//           <div className=''
-//           style={{
-//           backgroundImage: "url('/choto_bg.png')",
-//           backgroundSize: 'cover',
-//           backgroundPosition: 'center',
-//           backgroundRepeat: 'no-repeat'
-//         }}>
+//           <div
+//             style={{
+//               backgroundImage: "url('/choto_bg.png')",
+//               backgroundSize: 'cover',
+//               backgroundPosition: 'center',
+//               backgroundRepeat: 'no-repeat'
+//             }}
+//           >
+            
 //             {/* App Header */}
-//           <div className="flex items-center justify-center gap-2 py-3 sm:py-4 border-b border-black/5">
-//           <img src="/Card_Logo.png" alt="" />
-//          </div>
+//             <div className="flex items-center justify-center gap-2 sm:py-4">
+//               <img src="/Card_Logo.png" alt="" />
+//             </div>
+
+//             {/* Menu Items */}
+            
+//             <div className="flex flex-col gap-[8px] p-4">
+//             {[
+//               { label: 'New Agent', icon: '/Card_Btn1.png' },
+//               { label: 'Dashboard', icon: '/Card_Btn2.png' },
+//               { label: 'Agents', icon: '/Card_Btn3.png' },
+//               { label: 'Resources', icon: '/Card_Btn4.png' },
+//               { label: 'Slack Community', icon: '/Card_Btn5.png' },
+//             ].map((item) => (
+//               <button
+//                 key={item.label}
+//                 className="flex  items-center gap-[10px] w-full h-[51px] rounded-[8px]
+//                   px-[16px] 
+//                   bg-white/5
+//                   shadow-sm
+//                   border border-white/10
+//                   text-[#2a2a3a]
+//                    transition-all duration-200 ease-in-out cursor-pointer
+//   hover:bg-white hover:text-[#1a1a2e]
+//   hover:scale-[1.03]
+//   hover:shadow-md
+//   hover:mx-auto
+//    hover:justify-center hover:gap-3"
+//               >
+//                 <img
+//                   src={item.icon}
+//                   alt={item.label}
+//                   className="w-5 h-5 object-contain flex-shrink-0"
+//                 />
+
+//                 <span className="text-[#5a6080]">{item.label}</span>
+//               </button>
+//             ))}
+//             </div>
           
 
-//           {/* New Agent Button */}
-//           {/* <div className="px-4 sm:px-5 py-2 sm:py-3">
-//             <button className="w-full flex items-center justify-center gap-2 py-2 sm:py-3 rounded-xl text-xs sm:text-sm font-medium bg-white text-[#3a3a5a] border border-[#d0d4e8]">
-//               <span className="text-base sm:text-lg leading-none">+</span>
-//               New Agent
-//             </button>
-//           </div> */}
-
-//           {/* Menu Items */}
-//  {[
-//   { label: 'New Agent', icon: '/Card_Btn1.png' },
-//   { label: 'Dashboard', icon: '/Card_Btn2.png' },
-//   { label: 'Agents', icon: '/Card_Btn3.png' },
-//   { label: 'Resources', icon: '/Card_Btn4.png' },
-//   { label: 'Slack Community', icon: '/Card_Btn5.png' },
-// ].map((item) => (
-//   <button
-//     key={item.label}
-//     className="flex items-center gap-[10px] w-[385px] h-[51px] rounded-[8px]
-//       px-6 py-4
-//       bg-white/5
-//       border border-white/10
-//       text-[#2a2a3a]
-//       hover:bg-white/10
-//       transition-all cursor-pointer"
-//   >
-//     <img
-//       src={item.icon}
-//       alt={item.label}
-//       className="w-5 h-5 object-contain"
-//     />
-
-//     <span className="text-[#5a6080]">{item.label}</span>
-//   </button>
-// ))}
-
-//           <div className="pb-2" />
+//             <div className="pb-2" />
+//           </div>
 //         </div>
-//       </div>
 //       </div>
 
 //       {/* See All Button */}
@@ -238,7 +240,7 @@ export default function LaunchSteps() {
         </p>
 
         {/* App Window */}
-        <div className="w-full max-w-[440px] rounded-xl sm:rounded-2xl  ">
+        <div className="w-full max-w-[440px] rounded-xl sm:rounded-xl overflow-hidden">   
 
           <div
             style={{
@@ -250,43 +252,75 @@ export default function LaunchSteps() {
           >
             
             {/* App Header */}
-            <div className="flex items-center justify-center gap-2 sm:py-4">
+            <div className="flex items-center justify-center gap-2 py-4 sm:py-4 ">
               <img src="/Card_Logo.png" alt="" />
             </div>
 
             {/* Menu Items */}
             <div className="flex flex-col gap-[8px] p-4">
-            {[
-              { label: 'New Agent', icon: '/Card_Btn1.png' },
-              { label: 'Dashboard', icon: '/Card_Btn2.png' },
-              { label: 'Agents', icon: '/Card_Btn3.png' },
-              { label: 'Resources', icon: '/Card_Btn4.png' },
-              { label: 'Slack Community', icon: '/Card_Btn5.png' },
-            ].map((item) => (
-              <button
-                key={item.label}
-                className="flex  items-center gap-[10px] w-full h-[51px] rounded-[8px]
+              {[
+                { label: 'New Agent', icon: '/Card_Btn1.png' },
+                { label: 'Dashboard', icon: '/Card_Btn2.png' },
+                { label: 'Agents', icon: '/Card_Btn3.png' },
+                { label: 'Resources', icon: '/Card_Btn4.png' },
+                { label: 'Slack Community', icon: '/Card_Btn5.png' },
+              ].map((item) => (
+                <button
+                  key={item.label}
+                  className="flex items-center gap-[10px] w-full h-[51px] rounded-[8px]
                   px-[16px] 
                   bg-white/5
                   shadow-sm
-                  border border-white/10
+                  border border-white/6
                   text-[#2a2a3a]
-                   transition-all duration-200 ease-in-out cursor-pointer
-  hover:bg-white hover:text-[#1a1a2e]
-  hover:scale-[1.03]
-  hover:shadow-md
-  hover:mx-auto
-   hover:justify-center hover:gap-3"
-              >
-                <img
-                  src={item.icon}
-                  alt={item.label}
-                  className="w-5 h-5 object-contain flex-shrink-0"
-                />
+                  transition-all duration-200 ease-in-out cursor-pointer
+                  hover:bg-white hover:text-[#1a1a2e]
+                  hover:scale-[1.03]
+                  hover:shadow-md
+                  hover:mx-auto
+                  hover:bg-[#4A4A592E]
+                  hover:justify-center hover:gap-3"
+                >
+{/* //                 <button >
+//   key={item.label}
+//   className="flex items-center gap-[10px] w-full h-[51px] rounded-[8px]
+//   px-[16px]
+//   bg-white/5
+//   shadow-sm
+//   border border-white/10
+//   text-[#2a2a3a]
+//   transition-all duration-200 ease-in-out cursor-pointer
+//   hover:scale-[1.03]
+//   hover:shadow-md"
+//   style={{
+//     transition: 'all 0.2s ease-in-out',
+//   }}
+//   onMouseEnter={e => {
+//     const el = e.currentTarget
+//     el.style.background = 'linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 100%)'
+//     el.style.border = '1px solid'
+//     el.style.borderImage = 'linear-gradient(0deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.98)), linear-gradient(45deg, rgb(255, 255, 255) 33.33%, #FFFFFF 95%) 1'
+//     el.style.paddingLeft = '24px'
+//     el.style.paddingRight = '24px'
+//   }}
+//   onMouseLeave={e => {
+//     const el = e.currentTarget
+//     el.style.background = ''
+//     el.style.border = ''
+//     el.style.borderImage = ''
+//     el.style.paddingLeft = '16px'
+//     el.style.paddingRight = '16px'
+//   }}
+// > */}
+                  <img
+                    src={item.icon}
+                    alt={item.label}
+                    className="w-5 h-5 object-contain flex-shrink-0"
+                  />
 
-                <span className="text-[#5a6080]">{item.label}</span>
-              </button>
-            ))}
+                  <span className="text-[#5a6080]">{item.label}</span>
+                </button>
+              ))}
             </div>
 
             <div className="pb-2" />
