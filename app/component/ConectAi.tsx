@@ -1,169 +1,5 @@
 
 
-
-
-// "use client";
-
-// import React, { useState } from "react";
-
-// const icons: Record<string, string> = {
-//   wordpress: "/wordpress.svg.png",
-//   dropBox: "/dropbox.png",
-//   sharepoint: "/sharepoint.png",
-//   googleDrive: "/google-drive.png",
-//   youtube: "/youtube.png",
-// };
-
-// type Node = {
-//   key: string;
-//   label: string;
-//   angle: number;
-//   radius: number;
-//   opacity: number;
-// };
-
-// const nodes: Node[] = [
-//   { key: "dropBox",     label: "Dropbox",     angle: 180, radius: 150, opacity: 1   },
-//   { key: "sharepoint",  label: "SharePoint",  angle: 0,   radius: 150, opacity: 1   },
-//   { key: "googleDrive", label: "Google Drive", angle: 180, radius: 230, opacity: 0.3 },
-//   { key: "youtube",     label: "YouTube",     angle: 0,   radius: 230, opacity: 0.3 },
-// ];
-
-// function polarToXY(angleDeg: number, radius: number) {
-//   const rad = (angleDeg * Math.PI) / 180;
-//   return { x: Math.cos(rad) * radius, y: Math.sin(rad) * radius };
-// }
-
-// const HubSpoke: React.FC = () => {
-//   const [hovered, setHovered] = useState<string | null>(null);
-//   const cx = 200;
-//   const cy = 200;
-//   const innerR = 86;
-
-//   return (
-//     <div className="relative" style={{ width: 400, height: 400 }}>
-//       <svg
-//         className="absolute inset-0 w-full h-full"
-//         viewBox="0 0 400 400"
-//         fill="none"
-//       >
-//         <circle cx={cx} cy={cy} r={150} fill="white" fillOpacity={0.5} />
-
-//         {/* vertical axis lines */}
-//         <line x1={cx} y1={cy - 67} x2={cx} y2={cy - 150} stroke="#c8cce0" strokeWidth="1" />
-//         <line x1={cx} y1={cy + 67} x2={cx} y2={cy + 150} stroke="#c8cce0" strokeWidth="1" />
-
-//         {/* spoke lines from inner circle edge to node */}
-//         {nodes.map((node) => {
-//           const start = polarToXY(node.angle, innerR);
-//           const end   = polarToXY(node.angle, node.radius);
-//           return (
-//             <line
-//               key={node.key}
-//               x1={cx + start.x} y1={cy + start.y}
-//               x2={cx + end.x}   y2={cy + end.y}
-//               stroke={hovered === node.key ? "#6c8ef5" : "#c8cce0"}
-//               strokeWidth="0.5"
-//               style={{ transition: "stroke 0.3s" }}
-//             />
-//           );
-//         })}
-//       </svg>
-
-//       {/* Center hub */}
-//       <div
-//         className="absolute flex items-center justify-center rounded-full bg-white"
-//         style={{ width: 170, height: 170, left: cx - 85, top: cy - 85, zIndex: 10 }}
-//       >
-//         <img
-//           src={icons.wordpress}
-//           alt="WordPress"
-//           className="w-[58px] h-[58px] object-contain bg-white  hover:scale-110 transition-transform duration-200"
-//         />
-//       </div>
-
-//       {/* Outer nodes */}
-//       {nodes.map((node) => {
-//         const { x, y } = polarToXY(node.angle, node.radius);
-//         const isHovered = hovered === node.key;
-//         return (
-//           <div
-//             key={node.key}
-//             onMouseEnter={() => setHovered(node.key)}
-//             onMouseLeave={() => setHovered(null)}
-//             className="absolute flex items-center justify-center rounded-full bg-white cursor-pointer"
-//             style={{
-//               width: 56,
-//               height: 56,
-//               left: cx + x - 28,
-//               top:  cy + y - 28,
-//               opacity: node.opacity,
-//               border: `1px solid ${isHovered ? "#6c8ef5" : "#dde0ee"}`,
-//               boxShadow: isHovered
-//                 ? "0 4px 16px rgba(108,142,245,0.18)"
-//                 : "0 2px 8px rgba(0,0,0,0.06)",
-//               transform: isHovered ? "scale(1.12)" : "scale(1)",
-//               transition: "all 0.25s ease",
-//               zIndex: 10,
-//             }}
-//           >
-//             <img
-//               src={icons[node.key]}
-//               alt={node.label}
-//               className="w-8 h-8 object-contain"
-//             />
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );
-// };
-
-// const ConnectAi: React.FC = () => {
-//   return (
-// <section
-//   className="bg-[#eef0f7] flex flex-wrap justify-center items-center gap-48 py-16 px-8"
-//   style={{ borderLeft: "1px solid #cbcbcb", borderRight: "1px solid #cbcbcb" }}
-// >     <div className="max-w-lg">
-//         <h1 className="text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-//           Connect AI to your{" "}
-//           <span className="text-gray-400 whitespace-nowrap">
-//             business knowledge today
-//           </span>
-//         </h1>
-//         <p className="mt-4 text-gray-500 leading-relaxed">
-//           Build, test, and deploy custom GPT AI agents that answer with accuracy.
-//           Drive revenue, save time, delight customers.
-//         </p>
-//         <div className="mt-6 flex flex-wrap gap-3">
-//           <button
-//   className="w-[196px] h-[47px] rounded-xl px-8 py-3.5 text-base font-semibold text-white transition-opacity hover:opacity-90"
-//   style={{
-//     background:
-//       "radial-gradient(114.65% 114.65% at 9.73% 17.27%, #1E82E0 0%, #1C38EA 100%), linear-gradient(167.06deg, rgba(57, 143, 243, 0.2) 0%, rgba(255, 255, 255, 0) 100%)",
-//     boxShadow:
-//       "4px 4px 4px 0px #131AE41A inset, -3px -3px 4px 0px #BFE5FB66 inset",
-//   }}
-// >
-//   Try free for 7 days
-// </button>
-//           <button className="w-[155px] h-[47px] rounded-xl px-8 py-3.5 bg-white border border-[#CBCBCB80] text-gray-700 hover:bg-gray-50 transition">
-//   Talk to sales
-// </button>
-//         </div>
-//       </div>
-
-//       <HubSpoke />
-//     </section>
-//   );
-// };
-
-// export default ConnectAi;
-
-
-
-
-
 "use client";
 
 import React, { useState } from "react";
@@ -185,10 +21,10 @@ type Node = {
 };
 
 const nodes: Node[] = [
-  { key: "dropBox",     label: "Dropbox",      angle: 180, radius: 150, opacity: 1   },
-  { key: "sharepoint",  label: "SharePoint",   angle: 0,   radius: 150, opacity: 1   },
+  { key: "dropBox", label: "Dropbox", angle: 180, radius: 150, opacity: 1 },
+  { key: "sharepoint", label: "SharePoint", angle: 0, radius: 150, opacity: 1 },
   { key: "googleDrive", label: "Google Drive", angle: 180, radius: 230, opacity: 0.3 },
-  { key: "youtube",     label: "YouTube",      angle: 0,   radius: 230, opacity: 0.3 },
+  { key: "youtube", label: "YouTube", angle: 0, radius: 230, opacity: 0.3 },
 ];
 
 function polarToXY(angleDeg: number, radius: number) {
@@ -213,25 +49,29 @@ const HubSpoke: React.FC<HubSpokeProps> = ({ scaleFactor = 1 }) => {
   const cy = 200;
   const innerR = 86;
 
-  const hubSize   = scaled(170, scaleFactor);
-  const nodeSize  = scaled(56,  scaleFactor);
-  const iconSize  = scaled(32,  scaleFactor);
-  const hubIconSz = scaled(58,  scaleFactor);
+  const hubSize = scaled(170, scaleFactor);
+  const nodeSize = scaled(56, scaleFactor);
+  const iconSize = scaled(32, scaleFactor);
+  const hubIconSz = scaled(58, scaleFactor);
 
   return (
     <div className="relative flex-shrink-0" style={{ width: size, height: size }}>
       <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" fill="none">
         <circle cx={cx} cy={cy} r={150} fill="white" fillOpacity={0.5} />
+
         <line x1={cx} y1={cy - 67} x2={cx} y2={cy - 150} stroke="#c8cce0" strokeWidth="1" />
         <line x1={cx} y1={cy + 67} x2={cx} y2={cy + 150} stroke="#c8cce0" strokeWidth="1" />
+
         {nodes.map((node) => {
           const start = polarToXY(node.angle, innerR);
-          const end   = polarToXY(node.angle, node.radius);
+          const end = polarToXY(node.angle, node.radius);
           return (
             <line
               key={node.key}
-              x1={cx + start.x} y1={cy + start.y}
-              x2={cx + end.x}   y2={cy + end.y}
+              x1={cx + start.x}
+              y1={cy + start.y}
+              x2={cx + end.x}
+              y2={cy + end.y}
               stroke={hovered === node.key ? "#6c8ef5" : "#c8cce0"}
               strokeWidth="0.5"
               style={{ transition: "stroke 0.3s" }}
@@ -244,9 +84,10 @@ const HubSpoke: React.FC<HubSpokeProps> = ({ scaleFactor = 1 }) => {
       <div
         className="absolute flex items-center justify-center rounded-full bg-white"
         style={{
-          width: hubSize, height: hubSize,
+          width: hubSize,
+          height: hubSize,
           left: size / 2 - hubSize / 2,
-          top:  size / 2 - hubSize / 2,
+          top: size / 2 - hubSize / 2,
           zIndex: 10,
         }}
       >
@@ -254,14 +95,15 @@ const HubSpoke: React.FC<HubSpokeProps> = ({ scaleFactor = 1 }) => {
           src={icons.wordpress}
           alt="WordPress"
           style={{ width: hubIconSz, height: hubIconSz }}
-          className="object-contain bg-white hover:scale-110 transition-transform duration-200"
+          className="object-contain hover:scale-110 transition-transform duration-200"
         />
       </div>
 
-      {/* Outer nodes */}
+      {/* Nodes */}
       {nodes.map((node) => {
         const { x, y } = polarToXY(node.angle, node.radius);
         const isHovered = hovered === node.key;
+
         return (
           <div
             key={node.key}
@@ -269,15 +111,16 @@ const HubSpoke: React.FC<HubSpokeProps> = ({ scaleFactor = 1 }) => {
             onMouseLeave={() => setHovered(null)}
             className="absolute flex items-center justify-center rounded-full bg-white cursor-pointer"
             style={{
-              width: nodeSize, height: nodeSize,
-              left:  size / 2 + x * scaleFactor - nodeSize / 2,
-              top:   size / 2 + y * scaleFactor - nodeSize / 2,
+              width: nodeSize,
+              height: nodeSize,
+              left: size / 2 + x * scaleFactor - nodeSize / 2,
+              top: size / 2 + y * scaleFactor - nodeSize / 2,
               opacity: node.opacity,
               border: `1px solid ${isHovered ? "#6c8ef5" : "#dde0ee"}`,
               boxShadow: isHovered
                 ? "0 4px 16px rgba(108,142,245,0.18)"
                 : "0 2px 8px rgba(0,0,0,0.06)",
-              transform:  isHovered ? "scale(1.12)" : "scale(1)",
+              transform: isHovered ? "scale(1.12)" : "scale(1)",
               transition: "all 0.25s ease",
               zIndex: 10,
             }}
@@ -295,20 +138,20 @@ const HubSpoke: React.FC<HubSpokeProps> = ({ scaleFactor = 1 }) => {
   );
 };
 
-// Responsive scale hook
 function useHubScale() {
   const [scale, setScale] = React.useState(1);
 
   React.useEffect(() => {
     function update() {
       const w = window.innerWidth;
-      if (w < 360)       setScale(0.55);
-      else if (w < 480)  setScale(0.65);
-      else if (w < 640)  setScale(0.75);
-      else if (w < 768)  setScale(0.85);
-      else if (w < 1024) setScale(0.90);
-      else               setScale(1);
+      if (w < 360) setScale(0.55);
+      else if (w < 480) setScale(0.65);
+      else if (w < 640) setScale(0.75);
+      else if (w < 768) setScale(0.85);
+      else if (w < 1024) setScale(0.9);
+      else setScale(1);
     }
+
     update();
     window.addEventListener("resize", update);
     return () => window.removeEventListener("resize", update);
@@ -322,40 +165,44 @@ const ConnectAi: React.FC = () => {
 
   return (
     <section
-      className="bg-[#eef0f7] flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-16 xl:gap-24 py-12 lg:py-16 px-6 sm:px-10 lg:px-16"
-      style={{ borderLeft: "1px solid #cbcbcb", borderRight: "1px solid #cbcbcb" }}
+      className="bg-[#eef0f7] flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-24 xl:gap-48 py-12 lg:py-16 px-6 sm:px-10 lg:px-16"
+      style={{
+        borderLeft: "1px solid #cbcbcb",
+        borderRight: "1px solid #cbcbcb",
+      }}
     >
-      {/* Text block */}
+      {/* Text */}
       <div className="w-full max-w-lg text-center lg:text-left">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#1a1a1a]">
           Connect AI to your{" "}
           <span className="text-gray-400 whitespace-nowrap">
             business knowledge today
           </span>
         </h1>
+
         <p className="mt-4 text-gray-500 leading-relaxed text-sm sm:text-base">
           Build, test, and deploy custom GPT AI agents that answer with accuracy.
           Drive revenue, save time, delight customers.
         </p>
+
         <div className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
           <button
-            className="h-[47px] rounded-xl px-6 sm:px-8 py-3.5 text-sm sm:text-base font-semibold text-white transition-opacity hover:opacity-90"
+            className="h-[47px] rounded-xl px-6 sm:px-8 py-3.5 text-sm sm:text-base font-semibold text-white"
             style={{
               background:
-                "radial-gradient(114.65% 114.65% at 9.73% 17.27%, #1E82E0 0%, #1C38EA 100%), linear-gradient(167.06deg, rgba(57,143,243,0.2) 0%, rgba(255,255,255,0) 100%)",
-              boxShadow:
-                "4px 4px 4px 0px #131AE41A inset, -3px -3px 4px 0px #BFE5FB66 inset",
+                "radial-gradient(114.65% 114.65% at 9.73% 17.27%, #1E82E0 0%, #1C38EA 100%)",
             }}
           >
             Try free for 7 days
           </button>
+
           <button className="h-[47px] rounded-xl px-6 sm:px-8 py-3.5 bg-white border border-[#CBCBCB80] text-sm sm:text-base text-gray-700 hover:bg-gray-50 transition">
             Talk to sales
           </button>
         </div>
       </div>
 
-      {/* Hub diagram */}
+      {/* Hub */}
       <div className="flex justify-center items-center">
         <HubSpoke scaleFactor={scale} />
       </div>
