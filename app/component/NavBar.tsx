@@ -43,7 +43,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <section className="w-full flex flex-col items-center justify-start text-center px-6 py-6">
+    <section className="w-full flex flex-col items-center justify-start text-center px-2 py-3 md:px-6 md:py-6">
       {/* NavBar */}
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-8 h-16 flex items-center justify-between">
         
