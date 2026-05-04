@@ -6,7 +6,8 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <section className="w-full flex flex-col items-center justify-start text-center px-2 py-3 md:px-6 md:py-6">
+    <section className="w-full flex flex-col items-center text-center px-2 py-3 md:px-6 md:py-6 relative">
+      
       {/* NavBar */}
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-8 h-16 flex items-center justify-between">
         
@@ -16,10 +17,7 @@ export default function Home() {
         </div>
 
         {/* Desktop Nav */}
-        <ul
-          className="hidden md:flex items-center gap-7"
-          style={{ fontFamily: 'Geist', fontWeight: 500, fontSize: '14px', lineHeight: '140%' }}
-        >
+        <ul className="hidden md:flex items-center gap-7 font-medium text-sm">
           <li><a href="#" className="text-white hover:text-gray-300">Product</a></li>
           <li><a href="#" className="text-white hover:text-gray-300">Solutions</a></li>
           <li><a href="#" className="text-white hover:text-gray-300">Pricing</a></li>
@@ -28,17 +26,14 @@ export default function Home() {
 
         {/* Desktop Button */}
         <div className="hidden md:flex items-center gap-3">
-          <button
-            className="rounded-xl bg-white px-8 py-3.5 hover:bg-gray-50 font-medium text-base leading-[120%] tracking-[-0.13px] text-[#4A4A59]"
-            style={{ border: '1px solid rgba(203, 203, 203, 0.5)', fontFamily: 'Geist' }}
-          >
+          <button className="rounded-xl bg-white px-6 py-2.5 hover:bg-gray-50 font-medium text-sm text-[#4A4A59] border border-gray-300/50">
             Try for free
           </button>
         </div>
 
-        {/* Mobile Hamburger */}
+        {/* Hamburger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="md:hidden flex flex-col gap-1.5 p-2 z-50"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
@@ -47,26 +42,35 @@ export default function Home() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden w-full max-w-7xl mx-auto px-4 pb-4 flex flex-col gap-4">
-          <ul
-            className="flex flex-col gap-4 pt-4 border-t border-white/20"
-            style={{ fontFamily: 'Geist', fontWeight: 500, fontSize: '14px', lineHeight: '140%' }}
-          >
+      {/* Overlay */}
+      <div
+        className={`fixed inset-0 bg-black/40 transition-opacity duration-300 ${
+          menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+        onClick={() => setMenuOpen(false)}
+      />
+
+      {/* Right Side Drawer */}
+      <div
+        className={`fixed top-0 right-0 h-full w-[75%] max-w-sm bg-[#111] transform transition-transform duration-300 z-40 ${
+          menuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex flex-col h-full p-6 gap-6">
+
+          <ul className="flex flex-col gap-5 text-left font-medium text-sm mt-10">
             <li><a href="#" className="text-white hover:text-gray-300">Product</a></li>
             <li><a href="#" className="text-white hover:text-gray-300">Solutions</a></li>
             <li><a href="#" className="text-white hover:text-gray-300">Pricing</a></li>
             <li><a href="#" className="text-white hover:text-gray-300">Customers</a></li>
           </ul>
-          <button
-            className="w-full rounded-xl bg-white px-8 py-3.5 hover:bg-gray-50 font-medium text-base leading-[120%] tracking-[-0.13px] text-[#4A4A59]"
-            style={{ border: '1px solid rgba(203, 203, 203, 0.5)', fontFamily: 'Geist' }}
-          >
+
+          <button className="mt-auto w-full rounded-xl bg-white px-6 py-3 hover:bg-gray-50 font-medium text-sm text-[#4A4A59] border border-gray-300/50">
             Try for free
           </button>
         </div>
-      )}
+      </div>
+
     </section>
   )
 }
