@@ -173,9 +173,19 @@ const ConnectAi: React.FC = () => {
     >
       {/* Text */}
       <div className="w-full max-w-lg text-center lg:text-left">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#1a1a1a]">
+        {/* <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#1a1a1a]">
           Connect AI to your{" "}
           <span className="text-gray-400 whitespace-nowrap">
+            business knowledge today
+          </span>
+        </h1> */}
+
+        <h1 className="text-[30px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] font-bold leading-tight">
+          <span className="text-[#1a1a1a]">
+            Connect AI to your{" "}
+          </span>
+          <br className='hidden md:block' />
+          <span className="text-gray-400">
             business knowledge today
           </span>
         </h1>
