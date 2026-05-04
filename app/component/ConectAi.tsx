@@ -55,7 +55,7 @@ const HubSpoke: React.FC<HubSpokeProps> = ({ scaleFactor = 1 }) => {
   const hubIconSz = scaled(58, scaleFactor);
 
   return (
-    <div className="relative flex-shrink-0" style={{ width: size, height: size }}>
+    <div className="relative shrink-0" style={{ width: size, height: size }}>
       <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" fill="none">
         <circle cx={cx} cy={cy} r={150} fill="white" fillOpacity={0.5} />
 
@@ -187,7 +187,7 @@ const ConnectAi: React.FC = () => {
 
         <div className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
           <button
-            className="h-[47px] rounded-xl px-6 sm:px-8 py-3.5 text-sm sm:text-base font-semibold text-white"
+            className="h-11.75 rounded-xl px-6 sm:px-8 py-3.5 text-sm sm:text-base font-semibold text-white"
             style={{
               background:
                 "radial-gradient(114.65% 114.65% at 9.73% 17.27%, #1E82E0 0%, #1C38EA 100%)",
@@ -196,7 +196,7 @@ const ConnectAi: React.FC = () => {
             Try free for 7 days
           </button>
 
-          <button className="h-[47px] rounded-xl px-6 sm:px-8 py-3.5 bg-white border border-[#CBCBCB80] text-sm sm:text-base text-gray-700 hover:bg-gray-50 transition">
+          <button className="h-11.75 rounded-xl px-6 sm:px-8 py-3.5 bg-white border border-[#CBCBCB80] text-sm sm:text-base text-gray-700 hover:bg-gray-50 transition">
             Talk to sales
           </button>
         </div>
