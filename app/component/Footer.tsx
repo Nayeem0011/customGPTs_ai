@@ -20,10 +20,10 @@ const Footer = () => {
     <footer className="bg-[#eef0f7] px-4 sm:px-8 md:px-16 py-8 flex flex-col">
 
       {/* Top Section */}
-      <div className="flex flex-col md:flex-row gap-24 w-full max-w-[1200px] mx-auto">
+      <div className="flex flex-col md:flex-row gap-24 w-full max-w-300 mx-auto">
 
         {/* Left Side */}
-        <div className="flex flex-col gap-32 md:min-w-[180px] md:max-w-[200px]">
+        <div className="flex flex-col gap-32 md:min-w-45 md:max-w-50">
           <img src="/Logo_2.png" alt="Logo" className="h-7 w-auto " />
 
           <div className="flex flex-col gap-4">
@@ -47,40 +47,41 @@ const Footer = () => {
         </div>
 
         {/* Links — Desktop */}
-<div className="hidden md:flex flex-1 justify-between">
-  {footerLinks.map((col, index) => (
-    <div key={index} className="flex flex-col gap-2 w-fit">
-      <p
-        className="text-[#4A4A59] whitespace-nowrap"
-        style={{
-          fontFamily: 'Geist',
-          fontWeight: 500,
-          fontSize: '16px',
-          lineHeight: '100%',
-          letterSpacing: '0%',
-          verticalAlign: 'middle',  // ✅ যোগ হলো
-          height: '16px',           // ✅ যোগ হলো
-        }}
-      >
-        {col.title}
-      </p>
-      {col.links.map((link, i) => (
-        <a key={i} href="#"
-          className="text-[#8B929E] hover:text-[#4A4A59] whitespace-nowrap"
-          style={{
-            fontFamily: 'Geist',
-            fontWeight: 400,
-            fontSize: '16px',
-            lineHeight: '150%',
-            letterSpacing: '-0.4px',
-          }}
-        >
-          {link}
-        </a>
-      ))}
-    </div>
-  ))}
-</div>
+        <div className="hidden md:flex flex-1 justify-between">
+          {footerLinks.map((col, index) => (
+            <div key={index} className="flex flex-col gap-2 w-fit">
+              <p
+                className="text-[#4A4A59] whitespace-nowrap"
+                style={{
+                  fontFamily: 'Geist',
+                  fontWeight: 500,
+                  fontSize: '16px',
+                  lineHeight: '100%',
+                  letterSpacing: '0%',
+                  verticalAlign: 'middle',  
+                  height: '16px',          
+                }}
+              >
+                {col.title}
+              </p>
+              {col.links.map((link, i) => (
+                <a key={i} href="#"
+                  className="text-[#8B929E] hover:text-[#4A4A59] whitespace-nowrap"
+                  style={{
+                    fontFamily: 'Geist',
+                    fontWeight: 400,
+                    fontSize: '16px',
+                    lineHeight: '150%',
+                    letterSpacing: '-0.4px',
+                  }}
+                >
+                  {link}
+                </a>
+              ))}
+            </div>
+          ))}
+        </div>
+        
         {/* Links — Mobile Accordion */}
         <div className="flex flex-col md:hidden divide-y divide-gray-200">
           {footerLinks.map((col, index) => (
@@ -99,18 +100,18 @@ const Footer = () => {
               {openIndex === index && (
                 <div className="flex flex-col gap-1.5 pb-2.5 pl-1">
                   {col.links.map((link, i) => (
-                  <a key={i} href="#"
-  className="font-['Geist'] font-normal text-[16px] leading-[150%] text-[#8B929E] hover:text-[#4A4A59]"
-  style={{
-    letterSpacing: '-0.4px',
-    verticalAlign: 'middle',
-    height: '24px',
-    display: 'inline-flex',
-    alignItems: 'center',
-  }}
->
-  {link}
-</a>
+                    <a key={i} href="#"
+                      className="font-['Geist'] font-normal text-[16px] leading-[150%] text-[#8B929E] hover:text-[#4A4A59]"
+                      style={{
+                        letterSpacing: '-0.4px',
+                        verticalAlign: 'middle',
+                        height: '24px',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                      }}
+                    >
+                      {link}
+                    </a>
                   ))}
                 </div>
               )}
@@ -120,7 +121,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-6 pt-4 border-t border-gray-300 text-center max-w-[1200px] mx-auto w-full">
+      <div className="mt-6 pt-4 border-t border-gray-300 text-center max-w-300 mx-auto w-full">
         <p className="text-[12px] text-gray-500">
           © Copyright 2025 – CustomGPT.ai – All Rights Reserved
         </p>
