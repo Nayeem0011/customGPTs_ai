@@ -164,8 +164,7 @@ const ConnectAi: React.FC = () => {
   const scale = useHubScale();
 
   return (
-    <section
-      className="bg-[#eef0f7] flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-24 xl:gap-48 py-12 lg:py-16 px-6 sm:px-10 lg:px-16"
+    <section className="bg-[#eef0f7] flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-24 xl:gap-48 py-12 lg:py-16 px-6 sm:px-10 lg:px-16"
       style={{
         borderLeft: "1px solid #cbcbcb",
         borderRight: "1px solid #cbcbcb",
@@ -173,14 +172,7 @@ const ConnectAi: React.FC = () => {
     >
       {/* Text */}
       <div className="w-full max-w-lg text-center lg:text-left">
-        {/* <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#1a1a1a]">
-          Connect AI to your{" "}
-          <span className="text-gray-400 whitespace-nowrap">
-            business knowledge today
-          </span>
-        </h1> */}
-
-        <h1 className="text-[30px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] font-bold leading-tight">
+        <h1 className="text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] font-bold leading-tight">
           <span className="text-[#1a1a1a]">
             Connect AI to your{" "}
           </span>
@@ -189,15 +181,13 @@ const ConnectAi: React.FC = () => {
             business knowledge today
           </span>
         </h1>
-
-        <p className="mt-4 text-gray-500 leading-relaxed text-sm sm:text-base">
+        <p className="mt-4 text-gray-500 leading-relaxed text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]">
           Build, test, and deploy custom GPT AI agents that answer with accuracy.
           Drive revenue, save time, delight customers.
         </p>
-
         <div className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
           <button
-            className="h-11.75 rounded-xl px-6 sm:px-8 py-3.5 text-sm sm:text-base font-semibold text-white"
+            className="rounded-xl px-3.5 sm:px-3.75 md:px-4 lg:px-5 xl:px-6 2xl:px-8 py-2.5 sm:py-2.75 md:py-3 lg:py-3.25 xl:py-3.5 text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] font-semibold text-white"
             style={{
               background:
                 "radial-gradient(114.65% 114.65% at 9.73% 17.27%, #1E82E0 0%, #1C38EA 100%)",
@@ -205,13 +195,11 @@ const ConnectAi: React.FC = () => {
           >
             Try free for 7 days
           </button>
-
-          <button className="h-11.75 rounded-xl px-6 sm:px-8 py-3.5 bg-white border border-[#CBCBCB80] text-sm sm:text-base text-gray-700 hover:bg-gray-50 transition">
+          <button className="rounded-xl px-3 sm:px-3.75 md:px-4 lg:px-5 xl:px-6 2xl:px-8 py-2.25 sm:py-2.75 md:py-3 lg:py-3.25 xl:py-3.5 bg-white border border-[#CBCBCB80] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-gray-700 hover:bg-gray-50 transition">
             Talk to sales
           </button>
         </div>
       </div>
-
       {/* Hub */}
       <div className="flex justify-center items-center">
         <HubSpoke scaleFactor={scale} />

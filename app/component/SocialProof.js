@@ -26,7 +26,7 @@ const SocialProof = () => {
   return (
     <section className="flex flex-col items-center gap-5 sm:gap-6 md:gap-8 lg:gap-10 mb-20 mt-0 md:mt-10 lg:mt-20">
       <div>
-        <p className="text-[#42424F] font-medium text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] leading-[160%] tracking-[0em] text-center align-middle uppercase">
+        <p className="text-[#42424F] font-medium text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] leading-[160%] tracking-[0em] text-center align-middle uppercase">
           Trusted by 10,000+ organizations worldwide
         </p>
       </div>
