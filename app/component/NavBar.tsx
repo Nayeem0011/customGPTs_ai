@@ -22,7 +22,7 @@ export default function Home() {
         </ul>
         {/* Desktop Button */}
         <div className="hidden md:flex items-center gap-3">
-          <button className="rounded-xl bg-white px-6 py-2.5 hover:bg-gray-50 font-medium text-sm text-[#4A4A59] border border-gray-300/50">
+          <button className="rounded-xl bg-white px-6 py-2.5 hover:bg-gray-50 font-medium text-sm text-[#4A4A59] border border-gray-300/50 cursor-pointer">
             Try for free
           </button>
         </div>
@@ -56,7 +56,7 @@ export default function Home() {
             <li><a href="#" className="text-white hover:text-gray-300">Pricing</a></li>
             <li><a href="#" className="text-white hover:text-gray-300">Customers</a></li>
           </ul>
-          <button className="mt-auto w-full rounded-xl bg-white px-6 py-3 hover:bg-gray-50 font-medium text-sm text-[#4A4A59] border border-gray-300/50">
+          <button className="mt-auto w-full rounded-xl bg-white px-6 py-3 hover:bg-gray-50 font-medium text-sm text-[#4A4A59] border border-gray-300/50 cursor-pointer">
             Try for free
           </button>
         </div>

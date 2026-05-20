@@ -32,7 +32,7 @@ const HeroPage = () => {
         </div>
         <div className="flex items-center gap-3 md:gap-4 flex-wrap justify-center">
           <button
-            className="rounded-lg md:rounded-xl px-3 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-3 lg:px-8 lg:py-3.5 text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] font-semibold text-white transition-opacity hover:opacity-90"
+            className="rounded-lg md:rounded-xl px-3 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-3 lg:px-8 lg:py-3.5 text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] font-semibold text-white transition-opacity hover:opacity-90 cursor-pointer"
             style={{
               background: 'radial-gradient(114.65% 114.65% at 9.73% 17.27%, #1E82E0 0%, #1C38EA 100%)',
               boxShadow: '4px 4px 4px 0px #131AE41A inset, -3px -3px 4px 0px #BFE5FB66 inset',
@@ -41,7 +41,7 @@ const HeroPage = () => {
             Sign up free
           </button>
           <button
-            className="rounded-lg md:rounded-xl px-3 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-3 lg:px-8 lg:py-3.5 text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] font-semibold text-[#4A4A59] bg-white hover:bg-gray-50 transition-colors"
+            className="rounded-lg md:rounded-xl px-3 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-3 lg:px-8 lg:py-3.5 text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] font-semibold text-[#4A4A59] bg-white hover:bg-gray-50 transition-colors cursor-pointer"
             style={{ border: '1px solid rgba(203, 203, 203, 0.5)' }}
           >
             Chat with the AI

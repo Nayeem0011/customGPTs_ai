@@ -44,7 +44,7 @@ const Trusted = () => {
                             <span className='font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%] tracking-[0em] align-middle'>SOC-2 type II, GDPR, full encryption</span>
                         </div>
                         {/* Button */}
-                        <button className='rounded-xl border border-[#CBCBCB80] bg-[#FFFFFF] py-2.5 px-7 md:py-3 md:px-8 lg:py-3.5 lg:px-9 font-medium text-[#4A4A59] text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] tracking-[-0.13px] align-middle'>
+                        <button className='rounded-xl border border-[#CBCBCB80] bg-[#FFFFFF] py-2.5 px-7 md:py-3 md:px-8 lg:py-3.5 lg:px-9 font-medium text-[#4A4A59] text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] tracking-[-0.13px] align-middle cursor-pointer'>
                             Explore trust center
                         </button>
                     </div>
@@ -82,7 +82,7 @@ const Trusted = () => {
                             <span className='font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%] tracking-[0em] align-middle'>Every response has a link directly to its source</span>
                         </div>
                         {/* Button */}
-                        <button className='rounded-xl border border-[#CBCBCB80] bg-[#FFFFFF] py-2.5 px-7 md:py-3 md:px-8 lg:py-3.5 lg:px-9 font-medium text-[#4A4A59] text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] tracking-[-0.13px] align-middle'>
+                        <button className='rounded-xl border border-[#CBCBCB80] bg-[#FFFFFF] py-2.5 px-7 md:py-3 md:px-8 lg:py-3.5 lg:px-9 font-medium text-[#4A4A59] text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] tracking-[-0.13px] align-middle cursor-pointer'>
                             Benchmark Announcement
                         </button>
                     </div>
