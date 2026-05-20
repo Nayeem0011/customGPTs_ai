@@ -13,11 +13,11 @@ const Trusted = () => {
             {/* Top heading + description */}
             <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-6'>
                 {/* Left heading */}
-                <h1 className='text-[#9898A7] font-medium text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] leading-[130%] tracking-[0px] align-middle'>
+                <h1 className='text-[#9898A7] font-geist font-medium text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] leading-[130%] tracking-[0px] align-middle'>
                     Why startup choose <br className='hidden md:block' /> <span className='text-[#4A4A59]'>CustomGPT.ai</span>
                 </h1>
                 {/* Right description */}
-                <p className='text-[#8B929E] font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[160%] tracking-[0px] align-middle'>
+                <p className='text-[#8B929E] font-geist font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[160%] tracking-[0px] align-middle'>
                     Built for organizations. AI that’s easy, secure, <br className='lg:block hidden' /> and represents us like a star team member.
                 </p>
             </div>
@@ -28,23 +28,23 @@ const Trusted = () => {
                     {/* Content (text area) */}
                     <div className='flex items-start justify-start flex-col gap-6 pl-8 pt-8 z-10 relative'>
                         {/* Card title */}
-                        <h3 className='text-[#FFFFFF] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] leading-[130%] tracking-[0px] align-middle'>
+                        <h3 className='text-[#FFFFFF] font-geist font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] leading-[130%] tracking-[0px] align-middle'>
                             Enterprise-grade data security
                         </h3>
                         {/* Feature 1 */}
                         <div className='text-[#FFFFFF] flex gap-1 md:gap-1.5'>
                             <SparkIcon />
-                            <span className='font-semibold text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[130%] tracking-[0em] align-middle'>Full data protection:</span>
-                            <span className='font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%] tracking-[0em] align-middle'>No training or sharing your data</span>
+                            <span className='font-geist font-semibold text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[130%] tracking-[0em] align-middle'>Full data protection:</span>
+                            <span className='font-geist font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%] tracking-[0em] align-middle'>No training or sharing your data</span>
                         </div>
                         {/* Feature 2 */}
                         <div className='text-[#FFFFFF] flex gap-1 md:gap-1.5'>
                             <SparkIcon />
-                            <span className='font-semibold text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[130%] tracking-[0em] align-middle'>Enterprise security:</span>
-                            <span className='font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%] tracking-[0em] align-middle'>SOC-2 type II, GDPR, full encryption</span>
+                            <span className='font-geist font-semibold text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[130%] tracking-[0em] align-middle'>Enterprise security:</span>
+                            <span className='font-geist font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%] tracking-[0em] align-middle'>SOC-2 type II, GDPR, full encryption</span>
                         </div>
                         {/* Button */}
-                        <button className='rounded-xl border border-[#CBCBCB80] bg-[#FFFFFF] py-2.5 px-7 md:py-3 md:px-8 lg:py-3.5 lg:px-9 font-medium text-[#4A4A59] text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] tracking-[-0.13px] align-middle cursor-pointer'>
+                        <button className='rounded-xl border border-[#CBCBCB80] bg-[#FFFFFF] py-2.5 px-7 md:py-3 md:px-8 lg:py-3.5 lg:px-9 font-geist font-medium text-[#4A4A59] text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] tracking-[-0.13px] align-middle cursor-pointer'>
                             Explore trust center
                         </button>
                     </div>
@@ -59,17 +59,17 @@ const Trusted = () => {
                     {/* Content (text area) */}
                     <div className='flex items-start justify-start flex-col gap-6 pl-8 pt-8 z-10 relative'>
                         {/* Card title */}
-                        <h3 className='text-[#4A4A59] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] leading-[130%] tracking-[0px] align-middle'>
+                        <h3 className='text-[#4A4A59] font-geist font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] leading-[130%] tracking-[0px] align-middle'>
                             Answers you trust
                         </h3>
                         {/* Feature 1 */}
                         <div className='text-[#4A4A59] flex items-start gap-1 md:gap-1.5'>
                             <SparkIcon2 />
                             <div className='block'>
-                                <span className='font-semibold text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[130%]'>
+                                <span className='font-geist font-semibold text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[130%]'>
                                     Full data protection:
                                 </span>
-                                <span className='font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%]'>
+                                <span className='font-geist font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%]'>
                                     Third-party verified #1 for anti-hallucination <br className='hidden md:block' />
                                     technology, beating out major players like OpenAI and Google
                                 </span>
@@ -78,11 +78,11 @@ const Trusted = () => {
                         {/* Feature 2 */}
                         <div className='text-[#4A4A59] flex gap-1.5'>
                             <SparkIcon2 />
-                            <span className='font-semibold text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[130%] tracking-[0em] align-middle'>Enterprise security:</span>
-                            <span className='font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%] tracking-[0em] align-middle'>Every response has a link directly to its source</span>
+                            <span className='font-geist font-semibold text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[130%] tracking-[0em] align-middle'>Enterprise security:</span>
+                            <span className='font-geist font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%] tracking-[0em] align-middle'>Every response has a link directly to its source</span>
                         </div>
                         {/* Button */}
-                        <button className='rounded-xl border border-[#CBCBCB80] bg-[#FFFFFF] py-2.5 px-7 md:py-3 md:px-8 lg:py-3.5 lg:px-9 font-medium text-[#4A4A59] text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] tracking-[-0.13px] align-middle cursor-pointer'>
+                        <button className='rounded-xl border border-[#CBCBCB80] bg-[#FFFFFF] py-2.5 px-7 md:py-3 md:px-8 lg:py-3.5 lg:px-9 font-geist font-medium text-[#4A4A59] text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] tracking-[-0.13px] align-middle cursor-pointer'>
                             Benchmark Announcement
                         </button>
                     </div>

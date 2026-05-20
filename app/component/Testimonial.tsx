@@ -34,7 +34,7 @@ const Testimonial = () => {
   return (
     <section className="bg-[#f5f6f8] py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="px-6 text-[#4A4A59] font-medium text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] leading-[130%]">
+        <h2 className="px-6 text-[#4A4A59] font-geist font-medium text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] leading-[130%]">
           See what our customers are saying <br className='lg:block hidden' />
           <span className="text-[#9898A7]">about Custom GPTs</span>
         </h2>
@@ -56,7 +56,7 @@ const Testimonial = () => {
                   {isActive ? (
                     <div className="w-75 h-75 md:w-80 md:h-80 lg:w-86 lg:h-86 xl:w-92 xl:h-92 2xl:w-117.5 2xl:h-108.75 transition-all duration-500 bg-[radial-gradient(120.74%_124.92%_at_7.26%_100%,#326DE4_0%,#628FFD_100%)] text-white p-5 sm:p-6  md:p-7  lg:p-8 flex flex-col">
                       <TvIcon />
-                      <p className="font-medium text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] 2xl:text-[18px] leading-[160%] tracking-[0em] align-middle mt-5 sm:mt-6 md:mt-7 lg:mt-8">{item.text}</p>
+                      <p className="font-geist font-medium text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] 2xl:text-[18px] leading-[160%] tracking-[0em] align-middle mt-5 sm:mt-6 md:mt-7 lg:mt-8">{item.text}</p>
                       <div className="flex items-center gap-4 mt-10 lg:mt-14 xl:mt-18 2xl:mt-30">
                         <Image
                           src={item.img}
@@ -66,8 +66,8 @@ const Testimonial = () => {
                           className=" w-12.5 h-13.25 rounded-xl object-cover "
                         />
                         <div className="">
-                          <h4 className="font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[160%] tracking-[0em] align-middle text-[#FFFFFF]">{item.name}</h4>
-                          <p className="font-normal text-[12px] md:text-[13px] lg:text-[14px] leading-[160%] tracking-[0em] align-middle">{item.role}</p>
+                          <h4 className="font-geist font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[160%] tracking-[0em] align-middle text-[#FFFFFF]">{item.name}</h4>
+                          <p className="font-geist font-normal text-[12px] md:text-[13px] lg:text-[14px] leading-[160%] tracking-[0em] align-middle">{item.role}</p>
                         </div>
                       </div>
                     </div>
@@ -83,8 +83,8 @@ const Testimonial = () => {
                       </div>
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_40.32%,#4A4A59_100%)]"/>
                       <div className="absolute bottom-6 left-6 flex flex-col gap-0 md:gap-0.5">
-                        <h4 className="text-[#FFFFFF] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[160%] tracking-[0em] align-middle">{item.name}</h4>
-                        <p className="text-[#FFFFFF] font-normal text-[12px] md:text-[13px] lg:text-[14px] leading-[160%] tracking-[0em] align-middle">{item.role}</p>
+                        <h4 className="font-geist text-[#FFFFFF] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[160%] tracking-[0em] align-middle">{item.name}</h4>
+                        <p className="font-geist text-[#FFFFFF] font-normal text-[12px] md:text-[13px] lg:text-[14px] leading-[160%] tracking-[0em] align-middle">{item.role}</p>
                       </div>
                     </>
                   )}
@@ -98,7 +98,7 @@ const Testimonial = () => {
           <button onClick={prevSlide} className="px-4 py-2 bg-gray-200 rounded cursor-pointer">
             ←
           </button>
-          <span>{index + 1} / {data.length}</span>
+          <span className="font-geist">{index + 1} / {data.length}</span>
           <button onClick={nextSlide} className="px-4 py-2 bg-gray-200 rounded cursor-pointer">
             →
           </button>

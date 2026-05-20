@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-            <p className="text-[11px] text-blue-500">GDPR & SOC2 Compliant</p>
+            <p className=" font-geist text-[11px] text-blue-500">GDPR & SOC2 Compliant</p>
             <div className="flex items-center gap-2.75 sm:gap-3 md:gap-3.25 lg:gap-3.5 xl:gap-3.75 2xl:gap-4">
               <img src="/Tweiter.png" alt="Twitter" className="w-2.75 sm:w-3 md:w-3.25 lg:w-3.5 xl:w-3.75 2xl:w-4 h-2.75 sm:h-3 md:h-3.25 lg:h-3.5 xl:h-3.75 2xl:h-4" />
               <img src="/Insta.png" alt="Instagram" className="w-2.75 sm:w-3 md:w-3.25 lg:w-3.5 xl:w-3.75 2xl:w-4 h-2.75 sm:h-3 md:h-3.25 lg:h-3.5 xl:h-3.75 2xl:h-4" />
@@ -43,12 +43,11 @@ const Footer = () => {
         <div className="hidden sm:grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 sm:gap-9 md:gap-10 lg:gap-12 xl:gap-16 2xl:gap-24">
           {footerLinks.map((col, index) => (
             <div key={index} className="flex flex-col gap-2 w-fit">
-              <p
-                className="text-[#4A4A59] font-medium text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] whitespace-nowrap">
+              <p className="text-[#4A4A59] font-geist font-medium text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] whitespace-nowrap">
                 {col.title}
               </p>
               {col.links.map((link, i) => (
-                <a key={i} href="#" className="text-[#8B929E] font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] hover:text-[#4A4A59] whitespace-nowrap">
+                <a key={i} href="#" className="text-[#8B929E] font-geist font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] hover:text-[#4A4A59] whitespace-nowrap">
                   {link}
                 </a>
               ))}
@@ -64,7 +63,7 @@ const Footer = () => {
                 onClick={() => toggle(index)}
                 className="w-full flex justify-between items-center py-2.5 text-left"
               >
-                <span className="font-medium text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] text-[#4A4A59]">
+                <span className="font-geist font-medium text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] text-[#4A4A59]">
                   {col.title}
                 </span>
                 <span className="text-[#8B929E] text-base leading-none">
@@ -75,7 +74,7 @@ const Footer = () => {
                 <div className="flex flex-col pb-2.5 pl-1">
                   {col.links.map((link, i) => (
                     <a key={i} href="#"
-                      className="font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] text-[#8B929E] hover:text-[#4A4A59]"
+                      className="font-geist font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] text-[#8B929E] hover:text-[#4A4A59]"
                       style={{
                         letterSpacing: '-0.4px',
                         verticalAlign: 'middle',
@@ -96,7 +95,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="mt-6 pt-4 border-t border-gray-300 text-center max-w-300 mx-auto w-full">
-        <p className="text-[12px] text-gray-500">
+        <p className="font-geist text-[12px] text-gray-500">
           © Copyright 2025 – CustomGPT.ai – All Rights Reserved
         </p>
       </div>

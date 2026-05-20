@@ -15,14 +15,14 @@ export default function Home() {
         </div>
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-7 font-medium text-sm">
-          <li><a href="#" className="text-white hover:text-gray-300">Product</a></li>
-          <li><a href="#" className="text-white hover:text-gray-300">Solutions</a></li>
-          <li><a href="#" className="text-white hover:text-gray-300">Pricing</a></li>
-          <li><a href="#" className="text-white hover:text-gray-300">Customers</a></li>
+          <li><a href="#" className="font-geist text-white hover:text-gray-300">Product</a></li>
+          <li><a href="#" className="font-geist text-white hover:text-gray-300">Solutions</a></li>
+          <li><a href="#" className="font-geist text-white hover:text-gray-300">Pricing</a></li>
+          <li><a href="#" className="font-geist text-white hover:text-gray-300">Customers</a></li>
         </ul>
         {/* Desktop Button */}
         <div className="hidden md:flex items-center gap-3">
-          <button className="rounded-xl bg-white px-6 py-2.5 hover:bg-gray-50 font-medium text-sm text-[#4A4A59] border border-gray-300/50 cursor-pointer">
+          <button className="rounded-xl bg-white px-6 py-2.5 hover:bg-gray-50 font-geist font-medium text-sm text-[#4A4A59] border border-gray-300/50 cursor-pointer">
             Try for free
           </button>
         </div>
@@ -51,12 +51,12 @@ export default function Home() {
       >
         <div className="flex flex-col h-full p-6 gap-6">
           <ul className="flex flex-col gap-5 text-left font-medium text-sm mt-10">
-            <li><a href="#" className="text-white hover:text-gray-300">Product</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Solutions</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Pricing</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Customers</a></li>
+            <li><a href="#" className="font-geist text-white hover:text-gray-300">Product</a></li>
+            <li><a href="#" className="font-geist text-white hover:text-gray-300">Solutions</a></li>
+            <li><a href="#" className="font-geist text-white hover:text-gray-300">Pricing</a></li>
+            <li><a href="#" className="font-geist text-white hover:text-gray-300">Customers</a></li>
           </ul>
-          <button className="mt-auto w-full rounded-xl bg-white px-6 py-3 hover:bg-gray-50 font-medium text-sm text-[#4A4A59] border border-gray-300/50 cursor-pointer">
+          <button className="mt-auto w-full rounded-xl bg-white px-6 py-3 hover:bg-gray-50 font-geist font-medium text-sm text-[#4A4A59] border border-gray-300/50 cursor-pointer">
             Try for free
           </button>
         </div>

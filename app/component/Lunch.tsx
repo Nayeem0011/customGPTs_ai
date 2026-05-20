@@ -16,12 +16,12 @@ export default function LaunchSteps() {
   return (
     <section className="w-full flex flex-col items-center py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#eceef5]">
       {/* Heading */}
-      <h2 className="text-center mb-2 sm:mb-2.75 md:mb-3 lg:mb-3.25 xl:mb-3.5 2xl:mb-3 text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] font-medium leading-[130%] tracking-[0px]">
+      <h2 className="text-center mb-2 sm:mb-2.75 md:mb-3 lg:mb-3.25 xl:mb-3.5 2xl:mb-3 text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] font-geist font-medium leading-[130%] tracking-[0px]">
         <span className="text-[#1a1a2e]">Launch in 3 </span>
         <span className="text-[#9ba3c4]">streamlined steps</span>
       </h2>
       {/* Subtext */}
-      <p className="text-center text-[4a6bdc] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] mb-3.5 sm:mb-3.75 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 font-normal leading-[140%] tracking-[0px]">
+      <p className="text-center text-[4a6bdc] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] mb-3.5 sm:mb-3.75 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 font-geist font-normal leading-[140%] tracking-[0px]">
         No coding required&nbsp;-&nbsp;No engineering costs
       </p>
       {/* Tabs */}
@@ -32,8 +32,8 @@ export default function LaunchSteps() {
             onClick={() => setActive(i)}
             className={`px-3.75 sm:px-4 md:px-5 lg:px-6 xl:px-8 2xl:px-9 py-2.75 sm:py-3 md:py-3.25 lg:py-3.5 xl:py-3.75 2xl:py-4 text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] rounded-full transition-all border-none cursor-pointer whitespace-nowrap
               ${active === i
-                ? 'bg-white text-[#1a1a2e] font-semibold shadow-md'
-                : 'bg-transparent text-[#7b82a8] font-normal'
+                ? 'bg-white text-[#1a1a2e] font-geist font-semibold shadow-md'
+                : 'bg-transparent text-[#7b82a8] font-geist font-normal'
               }`}>
             {tab}
           </button>
@@ -49,13 +49,12 @@ export default function LaunchSteps() {
         }}
       >
         {/* Card Title */}
-        <h3 className="font-semibold text-white text-center text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[32px] 2xl:text-[36px] leading-[1.2] mb-3" >
+        <h3 className="font-geist font-semibold text-white text-center text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[32px] 2xl:text-[36px] leading-[1.2] mb-3" >
           Connect to all your knowledge<br className="hidden sm:block" />
           <span className="sm:hidden"> </span>
           with 1-click integrations
         </h3>
-        <p
-          className="text-center text-white/85 text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] mb-8 sm:mb-10 px-2" >
+        <p className="font-geist text-center text-white/85 text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] mb-8 sm:mb-10 px-2" >
           Make your information accessible with 1400+ supported<br className="hidden sm:block" />
           <span className="sm:hidden"> </span>
           file types and dozens of integrations
@@ -88,7 +87,7 @@ export default function LaunchSteps() {
                   key={item.label}
                   className="flex items-center gap-2.5 w-full h-9 sm:h-10 md:h-11 lg:h-12.5 rounded-lg px-4 bg-white/5 shadow-sm border border-white/6 text-[#2a2a3a] transition-all duration-200 ease-in-out cursor-pointer hover:bg-white hover:text-[#1a1a2e] hover:scale-[1.03] hover:shadow-md hover:mx-auto hover:justify-center hover:gap-3">
                   <Image src={item.icon} alt={item.label} className="w-3 sm:w-3.25 md:w-3.5 lg:w-3.75 xl:w-4 2xl:w-5 h-3 sm:h-3.25 md:h-3.5 lg:h-3.75 xl:h-4 2xl:h-5 object-contain shrink-0" />
-                  <span className="text-[#5a6080] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]">{item.label}</span>
+                  <span className="font-geist text-[#5a6080] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]">{item.label}</span>
                 </button>
               ))}
             </div>
@@ -97,7 +96,7 @@ export default function LaunchSteps() {
         </div>
       </div>
       {/* See All Button */}
-      <button className="mt-6 sm:mt-8 px-3.5 sm:px-3.75 md:px-4 lg:px-5 xl:px-6 2xl:px-8 py-2.5 sm:py-2.75 md:py-3 lg:py-3.25 xl:py-3.5 2xl:py-3 text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] rounded-full font-medium bg-white border border-[#d0d4e8] text-[#3a3a5a] cursor-pointer hover:bg-gray-50 transition-colors">
+      <button className="font-geist mt-6 sm:mt-8 px-3.5 sm:px-3.75 md:px-4 lg:px-5 xl:px-6 2xl:px-8 py-2.5 sm:py-2.75 md:py-3 lg:py-3.25 xl:py-3.5 2xl:py-3 text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] rounded-full font-medium bg-white border border-[#d0d4e8] text-[#3a3a5a] cursor-pointer hover:bg-gray-50 transition-colors">
         See all 100+ integrations
       </button>
 
