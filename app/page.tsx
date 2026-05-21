@@ -1,14 +1,22 @@
+"use client";
 import Header from "./component/Header";
 import Body from "./component/Body";
+import { ReactLenis } from "lenis/react";
 
-import Image from "next/image";
-
-export default function Home() {
+const page = () => {
   return (
-    <div>
+    <ReactLenis
+      root
+      options={{
+        lerp: 0.08,
+        duration: 2,
+        smoothWheel: true,
+      }}
+    >
       <Header />
       <Body />
-    </div>
-  );
+    </ReactLenis>
+  )
 }
 
+export default page;
