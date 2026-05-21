@@ -26,7 +26,7 @@ const Trusted = () => {
                 {/* Card 1 (Blue gradient) */}
                 <div className='relative w-full min-h-90 md:min-h-115.5 rounded-4xl overflow-hidden bg-[radial-gradient(120.74%_124.92%_at_7.26%_100%,#326DE4_0%,#628FFD_100%),radial-gradient(167.08%_140.48%_at_79.5%_0%,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0)_100%)] shadow-[inset_1.01px_0.94px_4.09px_0px_#FFFFFF21,inset_1.9px_1.77px_8.17px_0px_#FFFFFF21]'>
                     {/* Content (text area) */}
-                    <div className='flex items-start justify-start flex-col gap-6 pl-8 pt-8 z-10 relative'>
+                    <div className='flex items-start justify-start flex-col gap-6 pl-8 pt-8 relative'>
                         {/* Card title */}
                         <h3 className='text-[#FFFFFF] font-geist font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] leading-[130%] tracking-[0px] align-middle'>
                             Enterprise-grade data security
@@ -57,7 +57,7 @@ const Trusted = () => {
                 {/* Card 2 (Light gray) */}
                 <div className='relative w-full min-h-90 md:min-h-115.5 rounded-4xl overflow-hidden bg-[#F2F3FA] shadow-[inset_1.01px_0.94px_4.09px_0px_#FFFFFF21,inset_1.9px_1.77px_8.17px_0px_#FFFFFF21]'>
                     {/* Content (text area) */}
-                    <div className='flex items-start justify-start flex-col gap-6 pl-8 pt-8 z-10 relative'>
+                    <div className='flex items-start justify-start flex-col gap-6 pl-8 pt-8 relative'>
                         {/* Card title */}
                         <h3 className='text-[#4A4A59] font-geist font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] leading-[130%] tracking-[0px] align-middle'>
                             Answers you trust

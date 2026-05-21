@@ -88,7 +88,6 @@ const HubSpoke: React.FC<HubSpokeProps> = ({ scaleFactor = 1 }) => {
           height: hubSize,
           left: size / 2 - hubSize / 2,
           top: size / 2 - hubSize / 2,
-          zIndex: 10,
         }}
       >
         <img
@@ -122,7 +121,6 @@ const HubSpoke: React.FC<HubSpokeProps> = ({ scaleFactor = 1 }) => {
                 : "0 2px 8px rgba(0,0,0,0.06)",
               transform: isHovered ? "scale(1.12)" : "scale(1)",
               transition: "all 0.25s ease",
-              zIndex: 10,
             }}
           >
             <img

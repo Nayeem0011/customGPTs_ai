@@ -49,7 +49,7 @@ const Driver = () => {
                 transform: card.bgRotate ? "rotate(180deg)" : "rotate(0deg)",
               }}
             />
-            <div className="relative z-10 p-3">
+            <div className="relative p-3">
               <div
                 className="w-full sm:w-90 md:w-105 lg:w-117 min-h-90 lg:min-h-107.25 rounded-[28px] p-5 lg:p-6 flex flex-col justify-between bg-white"
                 style={{
@@ -66,7 +66,7 @@ const Driver = () => {
                   }}
                 />
                 {/* top */}
-                <div className="relative z-10 text-left">
+                <div className="relative text-left">
                   <p className="text-[10px] sm:text-[11px] md:text-[12px] font-geist uppercase tracking-widest text-gray-400 mb-1">
                     {card.label}
                   </p>
@@ -76,7 +76,7 @@ const Driver = () => {
                   <p className="font-geist text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] text-right text-gray-400">{card.subtitle}</p>
                 </div>
                 {/* bottom */}
-                <div className="relative z-10 mt-6 text-left">
+                <div className="relative mt-6 text-left">
                   <h2 className="text-[18px] lg:text-[20px] font-geist font-semibold text-gray-900 mb-1">
                     {card.title}{" "}
                     <span className="font-geist font-normal text-gray-500">{card.titleMuted}</span>

@@ -8,7 +8,7 @@ import icon2 from "../../public/Icon_2.png";
 const HeroPage = () => {
   return (
     <section>
-      <div className="flex flex-col items-center pt-1 sm:pt-8 md:pt-12 lg:pt-18">
+      <div className="flex flex-col items-center pt-24 sm:pt-28 md:pt-30 lg:pt-38">
         <p className="text-white font-geist font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[140%] tracking-[0px] text-center align-middle uppercase">
           #1 AI AGENT FOR BUSINESSES
         </p>
